@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }
+ 
+ h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+p{
+    font-size: 20px;
+    text-align: center;
+  } 
+ .box{
+    height:100vh;
+    width: 100vw;
+    display:block;
+    border:2px solid black;
+
+ }
+ .full-screen{
+    display: block;
+ }
+
+ @media screen and (min-width: 1024px) and (max-width: 1440px){
+    body {
+        background-color: #208B21;
+    }
+    .full-screen{
+        display: block;
+    }
+    .laptop-screen ~ .screen ~ .tablet ~ .mobile{
+        display:none;
+    }
+}
+
+    @media screen and (min-width: 1024px) and (max-width: 1440px){
+        body {
+            background-color: #208B21;
+        }
+        .laptop-screen{
+            display: block;
+        }
+        .full-screen, .screen, .tablet, .mobile{
+            display:none;
+        }}
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        body {
+            background-color: #B1882F;
+        }
+        .screen{
+            display: block;
+        }
+        .full-screen, .laptop-screen, .tablet, .mobile{
+            display:none;
+        }}
+    @media screen and (min-width: 425px) and (max-width: 768px){
+        body {
+            background-color: #75FBFD;
+        }
+        .tablet{
+            display: block;
+        }
+        .full-screen, .laptop-screen,.screen, .mobile{
+            display:none;
+        }}
+    @media screen and (max-width: 425px){
+        body {
+            background-color: #CA3142;
+        }
+        .mobile{
+            display: block;
+        }
+        .full-screen, .laptop-screen,.screen, .tablet{
+            display:none;
+        }}
+    @media screen and (min-width: 1440px) {
+        body{
+            background-color: aquamarine;
+         } 
+         .full-screen{
+            display: block;
+        }
+        .laptop-screen, .screen, .tablet, .mobile{
+            display:none;
+        }}
+
+    
+
